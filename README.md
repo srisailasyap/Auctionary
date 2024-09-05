@@ -1,25 +1,74 @@
-# SENG365 Web Server Assignment
+# Auction App Server
 
-Backend REST server for an auction web app. My first take at javascript, node and web development.
+This is the server-side application for an auction platform. It includes REST API endpoints, database schema, and Docker support for containerization.
 
-How I found my time to complete this, and with an A+ is beyond me during the most hectic and 
-chaotic semester experienced with at least three final-level courses (out of at least five) straight from hell. 
+## Table of Contents
 
-# Instructions
+- [Project Overview](#project-overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Docker Setup](#docker-setup)
+- [Database Schema](#database-schema)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Requirements
+## Project Overview
 
-* Node.js
-* MySQL database - [enter credentials here](./config/db.js)
+The Auction App Server is designed to handle backend operations for an auction platform. It features routes for user authentication, auction item management, and bidding functionalities. The app is built using Node.js, Express, and supports SQL databases.
 
-## Install
+## Installation
 
-```bash
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-repo/AuctionAppServer.git
+   cd AuctionAppServer
+Install the dependencies:
+bash
+Copy code
 npm install
-```
+Usage
+Start the server:
 
-## Run
-
-```bash
+bash
+Copy code
 npm start
-```
+Access the API at http://localhost:3000.
+
+Project Structure
+plaintext
+Copy code
+AuctionAppServer/
+├── docker-compose.yml   # Docker Compose setup file
+├── package.json         # Project dependencies
+├── package-lock.json    # Lock file for project dependencies
+├── README.md            # Project documentation
+├── server.js            # Main server file
+├── DB_data/             # Database data files
+├── DB_schema/           # SQL schema for database setup
+├── Dockerfile           # Docker image setup file
+├── routes/              # API routes
+├── controllers/         # Business logic controllers
+├── models/              # Database models
+├── config/              # Configuration files
+└── Images/              # Placeholder for image files
+Docker Setup
+To run the application in Docker, make sure you have Docker installed and run the following commands:
+
+Build and start the Docker container:
+
+bash
+Copy code
+docker-compose up --build
+The app will be available at http://localhost:3000.
+
+Database Schema
+The SQL schema file (DB_schema/) contains the necessary SQL scripts to set up the database for the auction platform.
+
+Run the following command to set up the database:
+
+bash
+Copy code
+mysql -u [username] -p [database_name] < DB_schema/schema.sql
+Contributing
+Feel free to submit a pull request or open an issue to improve the project.
