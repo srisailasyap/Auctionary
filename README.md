@@ -23,21 +23,12 @@ The Auction App Server is designed to handle backend operations for an auction p
    ```bash
    git clone https://github.com/your-repo/AuctionAppServer.git
    cd AuctionAppServer
-Install the dependencies:
-bash
-Copy code
+2.npm indepencies
 npm install
-Usage
-Start the server:
+3.npm start
+4.Access the API at http://localhost:3000
 
-bash
-Copy code
-npm start
-Access the API at http://localhost:3000.
-
-Project Structure
-plaintext
-Copy code
+## Project Structure
 AuctionAppServer/
 ├── docker-compose.yml   # Docker Compose setup file
 ├── package.json         # Project dependencies
@@ -52,23 +43,9 @@ AuctionAppServer/
 ├── models/              # Database models
 ├── config/              # Configuration files
 └── Images/              # Placeholder for image files
-Docker Setup
-To run the application in Docker, make sure you have Docker installed and run the following commands:
 
-Build and start the Docker container:
+## Docker Setup
+  docker-compose up --build
 
-bash
-Copy code
-docker-compose up --build
-The app will be available at http://localhost:3000.
-
-Database Schema
-The SQL schema file (DB_schema/) contains the necessary SQL scripts to set up the database for the auction platform.
-
-Run the following command to set up the database:
-
-bash
-Copy code
-mysql -u [username] -p [database_name] < DB_schema/schema.sql
-Contributing
-Feel free to submit a pull request or open an issue to improve the project.
+## Database Schema
+ mysql -u [username] -p [database_name] < DB_schema/schema.sql
