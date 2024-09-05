@@ -28,21 +28,7 @@ npm install
 3.npm start
 4.Access the API at http://localhost:3000
 
-## Project Structure
-AuctionAppServer/
-├── docker-compose.yml   # Docker Compose setup file
-├── package.json         # Project dependencies
-├── package-lock.json    # Lock file for project dependencies
-├── README.md            # Project documentation
-├── server.js            # Main server file
-├── DB_data/             # Database data files
-├── DB_schema/           # SQL schema for database setup
-├── Dockerfile           # Docker image setup file
-├── routes/              # API routes
-├── controllers/         # Business logic controllers
-├── models/              # Database models
-├── config/              # Configuration files
-└── Images/              # Placeholder for image files
+
 
 ## Docker Setup
   docker-compose up --build
