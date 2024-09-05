@@ -6,12 +6,7 @@ This is the server-side application for an auction platform. It includes REST AP
 
 - [Project Overview](#project-overview)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Docker Setup](#docker-setup)
-- [Database Schema](#database-schema)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Project Overview
 
